@@ -59,10 +59,9 @@ const displaySearchResult = books=>{
                     <div class="card h-100">
                             <img src="https://covers.openlibrary.org/b/id/${books.cover_i}-M.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">${books.title}</h5>
-                                <p class="card-text">Author Name: ${books.author_name}</p>
-                                <p class="card-text">Publisher: ${books.publisher}</p>
-                                <p class="card-text">Publish Date: ${books.publish_date}</p>
+                                <h5 class="card-title fw-bold">${books.title}</h5>
+                                <p class="card-text "><span class="text-primary fw-bold">Author Name:</span> ${books.author_name}</p>
+                                <p class="card-text"><span class="text-success fw-bold">Publish Date:</span> ${books.publish_date['0']}</p>
                                 
                             </div>
                     </div>  
