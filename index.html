@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(3, 61, 56);">
+
+    <!-- Header Part -->
+    <header style="text-align: center;margin-top: 30px;">
+        <h1 style="color: wheat;">Welcome To Our <span style="color: orange; font-weight: 700;">Book Bag</span></h1>
+        <hr style="color: white; height: 3px;">
+    </header>
+
+    <!-- Main Part -->
+    <main>
+        <!--------------
+         search start 
+        ----------------->
+        <div  class="input-group mb-3 w-50 mx-auto">
+            <input type="text" id="search" class="form-control" placeholder="Search Your Favourite Book ">
+            <button onclick="searchInput()" class="btn btn-outline-secondary text-black fw-bold bg-warning " type="button" >Search</button>
+          </div>
+          <!-- Error Message -->
+          <div id="error-message">
+          </div>
+
+          <!-- not found message -->
+          <div id="cout">
+
+          </div>
+
+
+          <!---------------- 
+             Cart Part Start
+            ----------------->  
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-auto mt-5">
+                <!-- <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                  </div> -->
+                </div>
+                
+
+    </main>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <!-- Main JS -->
+    <script src="js/apps.js"></script>
+</body>
+</html>
