@@ -62,7 +62,7 @@ const displaySearchResult = books=>{
                                 <h5 class="card-title">${books.title}</h5>
                                 <p class="card-text">Author Name: ${books.author_name}</p>
                                 <p class="card-text">Publisher: ${books.publisher}</p>
-                                <p class="card-text">Publisher Date: ${books.publish_date}</p>
+                                <p class="card-text">Publish Date: ${books.publish_date}</p>
                                 
                             </div>
                     </div>  
