@@ -36,7 +36,7 @@ const searchInput = ()=>{
 const displaySearchResult = books=>{
   if(books.length===0){
     const errorMessage = document.getElementById('error-message');
-    errorMessage.innerText= ' please give a book name in search box '
+    errorMessage.innerText= ' please give a valid book name in search box '
     const searchResult =document.getElementById('search-result');
     searchResult.textContent=' ';
      errorMessage.style.color='orange';
