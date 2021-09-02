@@ -25,7 +25,8 @@ const searchInput = ()=>{
                 .then(data=>{
                     displaySearchResult(data.docs)
                     const searchCount = document.getElementById('cout');
-                    searchCount.innerText=`Search Result Found: ${data.docs.length}`;
+                    searchCount.innerText=`Search Result Found: ${data.numFound} books, we are showing you ${data.docs.length} books on this page`;
+                    console.log(searchCount);
                     searchCount.style.color='orange';
                     searchCount.style.textAlign='center';
                     searchCount.style.fontWeight='700';
