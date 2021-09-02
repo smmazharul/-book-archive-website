@@ -26,13 +26,11 @@ const searchInput = ()=>{
                     displaySearchResult(data.docs)
                     const searchCount = document.getElementById('cout');
                     searchCount.innerText=`Search Result Found: ${data.numFound} books, we are showing you ${data.docs.length} books on this page`;
-                    console.log(searchCount);
                     searchCount.style.color='orange';
                     searchCount.style.textAlign='center';
                     searchCount.style.fontWeight='700';
                 })  
-    }
-                
+    }           
 }
 const displaySearchResult = books=>{
   if(books.length===0){
@@ -62,6 +60,7 @@ const displaySearchResult = books=>{
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">${books.title}</h5>
                                 <p class="card-text "><span class="text-primary fw-bold">Author Name:</span> ${books.author_name}</p>
+                                <p class="card-text "><span class="text-info fw-bold">Publisher Name:</span> ${books.publisher}</p>
                                 <p class="card-text"><span class="text-success fw-bold">Publish Date:</span> ${books.publish_date}</p>
                                 
                             </div>
